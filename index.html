@@ -44,10 +44,18 @@
   <!-- ===================== HERO ===================== -->
   <section class="hero" id="topo">
     <div class="hero__media">
-      <video autoplay muted loop playsinline poster="assets/img/hero/poster-feijoada.jpg">
-        <source src="assets/video/banner-feijoada.webm" type="video/webm">
-        <source src="assets/video/banner-feijoada.mp4" type="video/mp4">
-      </video>
+      <div class="hero__media-fundo" aria-hidden="true">
+        <video autoplay muted loop playsinline poster="assets/img/hero/poster-feijoada.jpg">
+          <source src="assets/video/banner-feijoada.webm" type="video/webm">
+          <source src="assets/video/banner-feijoada.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero__media-principal">
+        <video autoplay muted loop playsinline poster="assets/img/hero/poster-feijoada.jpg">
+          <source src="assets/video/banner-feijoada.webm" type="video/webm">
+          <source src="assets/video/banner-feijoada.mp4" type="video/mp4">
+        </video>
+      </div>
       <div class="hero__scrim"></div>
     </div>
     <div class="container hero__content">
@@ -86,7 +94,8 @@
         <p class="historia__assinatura" data-i18n="historia_firma">Flavio · Itabuna, Bahía → La Plata</p>
       </div>
       <div class="historia__selo">
-        <div class="historia__selo-interno">
+        <img class="historia__selo-logo" src="assets/img/logo.png" alt="Tempero Baiano">
+        <div class="historia__selo-legenda">
           <span data-i18n="historia_selo_top">Desde</span>
           <strong>2022</strong>
           <span data-i18n="historia_selo_bottom">sabor de Bahía</span>
