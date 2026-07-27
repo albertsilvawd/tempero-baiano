@@ -233,7 +233,8 @@ a:focus-visible, button:focus-visible, .lang-btn:focus-visible{
 .hero{
   position: relative;
   overflow:hidden;
-  min-height: 92vh;
+  min-height: 100vh;
+  min-height: 100svh;
   display:flex;
   align-items:flex-end;
   color: var(--branco);
@@ -352,8 +353,8 @@ a:focus-visible, button:focus-visible, .lang-btn:focus-visible{
 /* ============ HISTÓRIA ============ */
 .historia{
   display:grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 64px;
+  grid-template-columns: 1.6fr 0.7fr;
+  gap: 56px;
   align-items:center;
 }
 .historia__texto p{
@@ -381,8 +382,9 @@ a:focus-visible, button:focus-visible, .lang-btn:focus-visible{
 .historia__selo{
   position: relative;
   aspect-ratio: 1;
-  max-width: 340px;
-  margin-left: auto;
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
   border-radius: 50%;
   background: repeating-conic-gradient(var(--vermelho) 0deg 10deg, var(--amarelo) 10deg 20deg);
   box-shadow: var(--sombra);
@@ -392,7 +394,7 @@ a:focus-visible, button:focus-visible, .lang-btn:focus-visible{
 }
 .historia__selo-interno{
   position:absolute;
-  inset: 18px;
+  inset: 24px;
   border-radius:50%;
   background: var(--creme);
   display:flex;
@@ -400,24 +402,27 @@ a:focus-visible, button:focus-visible, .lang-btn:focus-visible{
   align-items:center;
   justify-content:center;
   text-align:center;
-  padding: 20px;
+  gap: 3px;
+  padding: 12px;
   border: 2px dashed var(--vermelho);
 }
 .historia__selo-interno strong{
   font-family: var(--fonte-display);
   font-style: italic;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  line-height: 1;
   color: var(--vermelho);
-  display:block;
 }
 .historia__selo-interno span{
   font-family: var(--fonte-mono);
-  font-size: 0.68rem;
+  font-size: 0.6rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: var(--tinta-suave);
-  margin-top: 6px;
+  max-width: 80px;
+  line-height: 1.3;
 }
+.historia__selo-interno span:first-child{ margin-bottom: 2px; }
 
 /* ============ MENU ============ */
 .menu__tabs{
