@@ -384,7 +384,6 @@ a:focus-visible, button:focus-visible, .lang-btn:focus-visible{
   font-family: var(--fonte-mono);
   font-size: 0.8rem;
   color: var(--tinta-suave);
-  text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 .historia__selo{
