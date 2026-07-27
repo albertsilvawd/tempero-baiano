@@ -490,34 +490,41 @@ a:focus-visible, button:focus-visible, .lang-btn:focus-visible{
   margin-bottom: 10px;
 }
 
-.menu__nota{
+.menu__aviso{
   margin-top: 40px;
-  padding: 18px 22px;
-  border: 1.5px dashed rgba(255,255,255,0.5);
-  border-radius: 14px 14px 0 0;
-  border-bottom: none;
+  background: var(--branco);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  overflow: hidden;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap: 18px;
+  padding: 22px 26px;
+}
+.menu__nota{
+  margin:0;
   font-size: 0.92rem;
-  color: rgba(255,255,255,0.92);
-  background: rgba(255,255,255,0.08);
+  color: var(--tinta-suave);
+  max-width: 640px;
 }
 .menu__nota-link{
-  display:flex;
+  display:inline-flex;
   align-items:center;
   gap: 9px;
-  padding: 14px 22px;
-  margin-top: -1px;
-  border: 1.5px dashed rgba(255,255,255,0.5);
-  border-top: none;
-  border-radius: 0 0 14px 14px;
-  background: rgba(255,255,255,0.14);
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: var(--verde);
   color: var(--branco);
   text-decoration: none;
   font-weight: 700;
   font-size: 0.9rem;
-  width: fit-content;
-  transition: background var(--transicao);
+  white-space: nowrap;
+  transition: background var(--transicao), transform var(--transicao);
+  flex-shrink: 0;
 }
-.menu__nota-link:hover{ background: rgba(255,255,255,0.24); }
+.menu__nota-link:hover{ background: var(--verde-escuro); transform: translateY(-2px); }
 
 /* ============ COMO PEDIR / DELIVERY ============ */
 .pasos{
